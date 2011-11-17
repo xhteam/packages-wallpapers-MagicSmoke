@@ -266,7 +266,7 @@ class MagicSmokeRS extends RenderScriptScene implements OnSharedPreferenceChange
         // Bitmaps are stored in memory in premultiplied form. We want non-premultiplied,
         // which is what getPixels gives us.
         int pixels[] = new int[65536];
-        in.getPixels(pixels, 0, 256, 0, 0, 256, 256);
+        in.getPixels(pixels, 0, 256, 0, 0, 171, 171);
         mRealTextures[index] = Allocation.createTyped(mRS, mTextureType,
                                                       Allocation.MipmapControl.MIPMAP_NONE,
                                                       Allocation.USAGE_SCRIPT |
